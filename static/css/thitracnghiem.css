@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    
+}
+
+#question-container {
+    margin: 20px auto;
+    width: 80%;
+}
+#result{
+    margin: 20px auto;
+    width: 50%;
+}
+.question {
+    width: 60%;
+    background: #fff;
+    border-radius: 5px;
+    
+    
+}
+
+.option-btn {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px; /* Khoảng cách giữa các nút */
+    padding: 10px;
+    border: 1px solid #84c5fe;
+    border-radius: 5px;
+    cursor: pointer;
+    background: aliceblue;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.option-btn:hover {
+    background-color: rgb(165, 202, 232);
+}
+
+.option-btn.selected {
+    background-color: #4983c2;
+    color: white;
+}
+
+
+.correct {
+    border: 1px solid #32a273;
+    background-color: #76e28f;
+    color: white;
+}
+
+.incorrect {
+    border: 1px solid #af3337;
+    background-color: #e0727d;
+    color: white;
+}
+#submit-btn{
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: beige;
+    position: absolute;
+    margin-left: 15%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    width: 10%;
+   
+}
+.backhome{
+    border: 1px solid #fff;
+    background-color: beige;
+    border-radius: 10px;
+    position: absolute;
+    margin-left: 15%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    width: 10%;
+}

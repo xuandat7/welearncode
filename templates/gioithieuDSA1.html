@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Khái niệm cấu trúc dữ liệu và giải thuật</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+                        
+        <link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="static/css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="static/css/main.css" rel="stylesheet">
+
+    </head>
+    
+    <body id="top">
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="/home">
+                        <!--i class="bi-back"></!--i-->
+                        <span style="color:white;">WeLearnCode</span>
+                    </a>
+
+                    <div class="d-lg-none ms-auto me-4">
+                        <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
+                        <a href="/logout" class="smoothscroll" style="padding-left: 10px; font-weight: bolder">Đăng xuất</a>
+                    </div>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <!-- <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-5 me-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_1">Khoá học</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_2">Luyện tập</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_3">Về chúng tôi</a>
+                            </li>
+
+                            
+                            
+                        </ul> -->
+
+                        
+                        <div class="d-none d-lg-block">
+                            <a class="navbar-icon bi-person smoothscroll" style="cursor: auto"></a>
+                            <a href="/logout" class="smoothscroll" style="padding-left: 10px; font-weight: bolder">Đăng xuất</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            
+            <!-- ĐẦU -->
+            <header class="site-header d-flex flex-column justify-content-center align-items-center">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+
+                        <div class="col-lg-5 col-12 mb-5">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/home">Trang chủ</a></li>
+
+                                    <li class="breadcrumb-item active" aria-current="page">Giới thiệu về Cấu trúc dữ liệu và giải thuật</li>
+                                </ol>
+                            </nav>
+
+                            <h2 class="text-white">Khái niệm cấu trúc dữ liệu và giải thuật</h2>
+
+                            <div class="d-flex align-items-center mt-5">
+                                <a href="#topics-detail" class="btn custom-btn custom-border-btn smoothscroll me-4">Đọc ngay</a>
+
+                                <a href="#top" class="custom-icon bi-bookmark smoothscroll"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 col-12">
+                            <div class="topics-detail-block bg-white shadow-lg">
+                                <img src="static/images/DSA1.png" class="topics-detail-block-image img-fluid">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+            <!-- NỘI DUNG -->
+            <section class="topics-detail-section section-padding" id="topics-detail">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-8 col-12 m-auto">
+                            <h3 class="mb-4">Khái niệm cấu trúc dữ liệu và giải thuật</h3>
+                            
+                            <d><strong>Cấu trúc dữ liệu</strong> là một cách lưu dữ liệu trong máy tính sao cho nó có thể được sử dụng một cách hiệu quả. Trong thiết kế nhiều loại chương trình, việc chọn cấu trúc dữ liệu là vấn đề quan trọng. Thông thường, một cấu trúc dữ liệu được chọn cẩn thận sẽ cho phép thực hiện thuật toán hiệu quả hơn. Khi đi vào chi tiết từng cấu trúc dữ liệu, mình sẽ cho các bạn thấy được việc áp dụng chính xác cấu trúc dữ liệu sẽ giúp cho chúng ta giải quyết vấn đề hiệu quả như thế nào.</d>
+                            <d>Lưu ý</d>
+                            <li>Cấu trúc dữ liệu là tập hợp các kiểu dữ liệu được sắp xếp theo một trật tự cụ thể</li>
+                            <li>Cấu trúc dữ liệu khác với kiểu dữ liệu cấu trúc</li>
+                            <li>Mỗi cấu trúc dữ liệu đều có điểm mạnh và điểm yếu</li>
+                            <li>Không có một cấu trúc dữ liệu nào tốt cho mọi bài toán</li>
+                            <br>
+                            <d>Một số cấu trúc dữ liệu cơ bản: stack, queue, array, list, graph, tree, … </d>
+                            <br>
+                            <div class="row my-4">
+                                <div class="col-lg-99 col-13">
+                                    <img src="static/images/DSA1.png" class="newsletter-image img-fluid">
+                                </div>
+                            </div>
+                            <d>Cấu trúc dữ liệu được chi thành 2 loại là : tuyến tính và phi tuyến tính. Bạn có thể dễ dàng tìm thấy định nghĩa lý thuyết cũng như ưu nhược điểm của từng dạng cấu trúc dữ liệu này nên để đơn giản hóa, ở đây mình chỉ tập trung vào việc so sánh giữa 2 loại trong bảng sau:</d>
+
+                            <br>
+                            <br>
+                            <br>
+                            <table border="0.5" cellpadding="10" cellspacing="5" style="width:700px" class="table table-sm table-bordered">
+                            <tbody>
+                            <tr>
+                            <td style="background-color:#eeeeee; height:40px; text-align:center; vertical-align:middle">
+                            <strong>CTDL TUYẾN TÍNH</strong></td>
+                            <td style="background-color:#eeeeee; height:40px; text-align:center; vertical-align:middle">
+                            <strong>CTDL PHI TUYẾN TÍNH</strong></td>
+                            </tr>
+                            <tr>
+                            <td>Các phần tử được sắp xếp theo thứ tự lần lượt, nối tiếp nhau.</td>
+                            <td>các phần tử được sắp xếp theo thứ bậc trong đó một phần tử sẽ được kết nối với một hoặc nhiều phần tử.</td>
+                            </tr>
+                            <tr>
+                            <td>Có thể được duyệt qua tất cả các phần tử một cách tuần tự trong một lần chạy. (nếu bắt đầu ở phần tử đầu tiên)</td>
+                            <td>Có thể không duyệt qua tất cả các phần tử trong một lần chạy do cấu trúc thứ bậc.</td>
+                            </tr>
+                            <tr>
+                            <td>Độ phức tạp về thời gian tăng theo kích thước dữ liệu.</td>
+                            <td>Độ phức tạp về thời gian thường không đổi</td>
+                            </tr>
+                            <tr>
+                            <td>Không phải là lựa chọn tốt nhất vì sự phức tạp trong hoạt động của các chương trình có độ phức tạp cao</td>
+                            <td>Các cấu trúc khác nhau sử dụng bộ nhớ theo những cách hiệu quả khác nhau tùy thuộc vào nhu cầu.</td>
+                            </tr>
+                            <tr>
+                            <td>
+                            <p>Ví dụ:</p>
+                            <p>1. Mảng - Arrays: các phần tử trong mảng có cùng kiểu dữ liệu,&nbsp;được sắp xếp liên tục&nbsp;trong bộ nhớ.</p>
+                            <p>2. Ngăn xếp - Stack:&nbsp;các phần tử được lưu trữ theo nguyên tắc LIFO. Nghĩa là, phần tử cuối cùng được lưu trữ trong ngăn xếp sẽ bị xóa đầu tiên.</p>
+                            <p>3. Hàng đợi - Queue: Cấu trúc dữ liệu hàng đợi hoạt động theo nguyên tắc FIFO trong đó phần tử đầu tiên được lưu trữ trong hàng đợi sẽ bị loại bỏ trước.</p>
+                            <p>4. Danh sách liên kết -&nbsp;Linked List: các phần tử dữ liệu được kết nối thông qua một loạt các nút. Và, mỗi nút chứa các mục dữ liệu và địa chỉ của nút tiếp theo.</p>
+                            </td>
+                            <td>
+                            <p>Ví dụ:</p>
+                            <ol>
+                            <li>Đồ thị - Graph:&nbsp;mỗi nút được gọi là đỉnh và mỗi đỉnh được nối với các đỉnh khác thông qua các cạnh.
+                            </li><li>Cây - Tree: Tương tự như đồ thị, cây cũng là một tập hợp các đỉnh và các cạnh. Tuy nhiên, trong cấu trúc dữ liệu cây, chỉ có thể có một cạnh giữa hai đỉnh.
+                            </li></ol>
+                            </td>
+                            </tr>
+                            </tbody>
+                            </table>
+
+                            <d>Vậy như thế nào là một cấu trúc dữ liệu hiệu quả?</d>
+                            <li>Lưu trữ chính xác, đầy đủ, phù hợp dữ liệu lưu trữ </li>
+                            <li>Thuận tiện truy xuất và xử lý dữ liệu</li>
+                            <li>Tối ưu về bộ nhớ</li>
+                            <li>Tốc độ truy vấn nhanh</li>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- LIÊN HỆ -->
+            <section class="section-padding section-bg">
+                <div class="container">
+                    <div class="row justify-content-center">
+
+                        <div class="col-lg-5 col-12">
+                            <img src="static/images/rear-view-young-college-student.jpg" class="newsletter-image img-fluid" alt="">
+                        </div>
+
+                        <div class="col-lg-5 col-12 subscribe-form-wrap d-flex justify-content-center align-items-center">
+                            <form class="custom-form subscribe-form" action="#" method="post" role="form">
+                                <h4 class="mb-4 pb-2">Nhận thông báo từ chúng tôi</h4>
+
+                                <input type="email" name="subscribe-email" id="subscribe-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Địa chỉ Email của bạn" required="">
+
+                                <div class="col-lg-12 col-12">
+                                    <button type="submit" class="form-control" onclick="window.location.href='/home'">Xác nhận</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+		
+        <footer class="site-footer section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-12 mb-4 pb-2">
+                        <a class="navbar-brand mb-2" href="index.html">
+                            <i class="bi-back"></i>
+                            <span>Topic</span>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <h6 class="site-footer-title mb-3">Resources</h6>
+
+                        <ul class="site-footer-links">
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Home</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">How it works</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">FAQs</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-0">
+                        <h6 class="site-footer-title mb-3">Information</h6>
+
+                        <p class="text-white d-flex mb-1">
+                            <a href="tel: 305-240-9671" class="site-footer-link">
+                                305-240-9671
+                            </a>
+                        </p>
+
+                        <p class="text-white d-flex">
+                            <a href="mailto:info@company.com" class="site-footer-link">
+                                info@company.com
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-lg-0 ms-auto">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            English</button>
+
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Thai</button></li>
+
+                                <li><button class="dropdown-item" type="button">Myanmar</button></li>
+
+                                <li><button class="dropdown-item" type="button">Arabic</button></li>
+                            </ul>
+                        </div>
+
+                        <p class="copyright-text mt-lg-5 mt-4">Copyright © 2048 Topic Listing Center. All rights reserved.
+                        <br><br>Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="static/js/jquery.min.js"></script>
+        <script src="static/js/bootstrap.bundle.min.js"></script>
+        <script src="static/js/jquery.sticky.js"></script>
+        <script src="static/js/custom.js"></script>
+
+    </body>
+</html>

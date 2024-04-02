@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>CSS hoạt động như thế nào</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+                        
+        <link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="static/css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="static/css/main.css" rel="stylesheet">
+
+    </head>
+    
+    <body id="top">
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="/home">
+                        <!--i class="bi-back"></!--i-->
+                        <span style="color:white;">WeLearnCode</span>
+                    </a>
+
+                    <div class="d-lg-none ms-auto me-4">
+                        <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
+                        <a href="/logout" class="smoothscroll" style="padding-left: 10px; font-weight: bolder">Đăng xuất</a>
+                    </div>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <!-- <div class="collapse navbar-collapse" id="navbarNav"> -->
+                        <!-- <ul class="navbar-nav ms-lg-5 me-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_1">Khoá học</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_2">Luyện tập</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_3">Về chúng tôi</a>
+                            </li>
+
+                            
+                            
+                        </ul> -->
+
+                        
+                        <div class="d-none d-lg-block">
+                            <a href="" class="navbar-icon bi-person smoothscroll"></a>
+                            <a href="/logout" class="smoothscroll" style="padding-left: 10px; font-weight: bolder">Đăng xuất</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            
+            <!-- ĐẦU -->
+            <header class="site-header d-flex flex-column justify-content-center align-items-center">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+
+                        <div class="col-lg-5 col-12 mb-5">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/home">Trang chủ</a></li>
+
+                                    <li class="breadcrumb-item active" aria-current="page">Giới thiệu về CSS</li>
+                                </ol>
+                            </nav>
+
+                            <h2 class="text-white">CSS hoạt động như thế nào</h2>
+
+                            <div class="d-flex align-items-center mt-5">
+                                <a href="#topics-detail" class="btn custom-btn custom-border-btn smoothscroll me-4">Đọc ngay</a>
+
+                                <a href="#top" class="custom-icon bi-bookmark smoothscroll"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 col-12">
+                            <div class="topics-detail-block bg-white shadow-lg">
+                                <img src="static/images/CSS2.jpg" class="topics-detail-block-image img-fluid">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+            <!-- NỘI DUNG -->
+            <section class="topics-detail-section section-padding" id="topics-detail">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-8 col-12 m-auto">
+                            <h3 class="mb-4">CSS hoạt động như thế nào?</h3>
+                            <div class="row my-4">
+                                <div class="col-lg-99 col-13">
+                                    <img src="static/images/CSS4.png" class="newsletter-image img-fluid">
+                                </div>
+                            </div>
+                            <p>Khi một trình duyệt web (browser) hiển thị một tài liệu, nó phải kết hợp nội dung cùng với kiểu trình bày thông tin của tài liệu đó. Trình duyệt sẽ xử lý tài liệu theo một số giai đoạn, mà Green Academy đã liệt kê bên dưới. Tuy nhiên, hãy nhớ rằng đây là một phiên bản rất đơn giản của một chuỗi những gì sẽ xảy ra khi một trình duyệt tải một trang web, và các trình duyệt khác nhau sẽ xử lý quá trình này theo những cách khác nhau. Và đây là những gì sẽ xảy ra:</p>
+                            <p>1. Trình duyệt sẽ tải HTML (ví dụ như: tải nó từ mạng)</p>
+                            <p>2. Trình duyệt chuyển đổi HTML thành DOM (Mô hình đối tượng tài liệu). DOM đại diện cho tài liệu trong bộ nhớ của máy tính. </p>
+                            <p>3. Sau đó, trình duyệt sẽ tìm nạp hầu hết các tài nguyên được liên kết với tài liệu HTML, chẳng hạn như hình ảnh và video được nhúng ... và CSS được liên kết! JavaScript được xử lý sau trong quá trình này. Green Academy sẽ nói về ngôn ngữ JavaScript sau ở bài viết sau để giữ cho mọi thứ đơn giản hơn.</p>
+                            <p>4. Trình duyệt phân tích cú pháp CSS đã tìm nạp và sắp xếp các quy tắc khác nhau theo loại của chúng thành các "nhóm" khác nhau, ví dụ: phần tử, lớp, ID, v.v. Dựa trên các bộ chọn mà nó tìm thấy, trình duyệt sẽ tìm ra các quy tắc nên được áp dụng cho các nodes trong DOM và đính kèm kiểu cho chúng theo yêu cầu (bước trung gian này được gọi là cây kết xuất).</p>
+                            <p>5. Cây kết xuất được bố trí trong cấu trúc mà nó sẽ xuất hiện sau khi các quy tắc đã được áp dụng cho nó.</p>
+                            <p>6. Sau tất cả, hiển thị trực quan của trang sẽ được hiển thị trên màn hình (giai đoạn này được gọi là painting).</p>
+                            <p>Có vẻ hơi khó hiểu phải không? Do đó sơ đồ sau đây sẽ cung cấp một cái nhìn đơn giản về quy trình hoạt động của CSS:</p>
+
+                            <div class="row my-4">
+                                <div class="col-lg-99 col-13">
+                                    <img src="static/images/CSS5.png" class="newsletter-image img-fluid">
+                                </div>
+                            </div>     
+
+                            <br>
+                            <br>
+                            <h3 class="mb-4">Các thuộc tính Background và Border trong CSS</h3>
+                            
+                            <d>Các thuộc tính Background và Border trong CSS<d>
+
+                                <table class="w3-table-all notranslate">
+                                <tbody>
+                                <tr class="alt">
+                                <th>Thuộc tính</th>
+                                <th>Mô tả</th>
+                                <th>CSS</th>
+                                </tr>
+                                <tr>
+                                <td>background</td>
+                                <td>Một thuộc tính viết tắt để đặt thuộc tính nền trong lời khai báo</td>
+                                <td>1</td>
+                                </tr>
+                                <tr class="alt">
+                                <td>background-attachment</td>
+                                <td>Đặt một ảnh nền để cố định hoặc&nbsp;cuộn với phần còn lại của trang</td>
+                                <td>1</td>
+                                </tr>
+                                <tr>
+                                <td>background-blend-mode</td>
+                                <td>Chỉ định các chế độ trộn của mỗi lớp nền(màu sắc/hình ảnh)</td>
+                                <td>3</td>
+                                </tr>
+                                <tr class="alt">
+                                <td>background-color</td>
+                                <td>Chỉ định màu nền của một phần tử</td>
+                                <td>1</td>
+                                </tr>
+                                <tr>
+                                <td>background-image</td>
+                                <td>Chỉ định một hoặc nhiều hình ảnh nền cho một phần tử</td>
+                                <td>1</td>
+                                </tr>
+                                <tr class="alt">
+                                <td>background-position</td>
+                                <td>Chỉ định vị trí của hình ảnh nền</td>
+                                <td>1</td>
+                                </tr>
+                                <tr>
+                                <td>background-repeat</td>
+                                <td>Thiết lập như thế nào một ảnh nền sẽ được lặp đi lặp lại</td>
+                                <td>1</td>
+                                </tr>
+                                <tr class="alt">
+                                <td>background-clip</td>
+                                <td>Chỉ định khu vực để sơn màu nền</td>
+                                <td>3</td>
+                                </tr>
+                                <tr>
+                                <td>background-origin</td>
+                                <td>Chỉ định nơi các hình nền được định vị</td>
+                                <td>3</td>
+                                </tr>
+                                <tr class="alt">
+                                <td>background-size</td>
+                                <td>Chỉ định kích thước của ảnh nền</td>
+                                <td>3</td>
+                                </tr>
+                                <tr>
+                                <td>border</td>
+                                <td>Thiết lập tất cả các thuộc tính đường viền trong lời khai báo</td>
+                                <td>1</td>
+                                </tr>
+                                <tr class="alt">
+                                <td>border-bottom</td>
+                                <td>Thiết lập tất cả các thuộc tính đường viền dưới trong lời khai báo</td>
+                                <td>1</td>
+                                </tr>
+                                <tr>
+                                <td>border-bottom-color</td>
+                                <td>Thiết lập màu của đường viền dưới</td>
+                                <td>1</td>
+                                </tr>
+                                <tr class="alt">
+                                <td>border-bottom-left-radius</td>
+                                <td>Xác định hình dạng của các đường viền&nbsp;góc dưới bên trái</td>
+                                <td>3</td>
+                                </tr>
+                                <tr>
+                                <td>border-bottom-right-radius</td>
+                                <td>Xác định hình dạng của các đường viền&nbsp;góc dưới bên phải</td>
+                                <td>3</td>
+                                </tr>
+                                <tr class="alt">
+                                <td>border-bottom-style</td>
+                                <td>Thiết lập kiểu (style) của đường viền dưới</td>
+                                <td>1</td>
+                                </tr>
+                                <tr>
+                                <td>border-bottom-width</td>
+                                <td>Thiết lập độ rộng của đường viền dưới</td>
+                                <td>1</td>
+                                </tr>
+                                <tr class="alt">
+                                <td>border-color</td>
+                                <td>Thiết lập màu sắc của bốn đường viền</td>
+                                <td>1</td>
+                                </tr>
+                                <tr>
+                                <td>border-image</td>
+                                <td>Một thuộc tính viết tắt để thiết lập tất cả các thuộc tính&nbsp;border-image-*</td>
+                                <td>3</td>
+                                </tr>
+                                <tr class="alt">
+                                <td>border-image-outset</td>
+                                <td>Chỉ định giá trị khu vực ảnh viền vượt ra ngoài vùng giới hạn của vùng bao</td>
+                                <td>3</td>
+                                </tr>
+                                <tr>
+                                <td>border-image-repeat</td>
+                                <td>Chỉ định ảnh viền nên được lặp đi lặp lại, tròn hoặc kéo dài</td>
+                                <td>3</td>
+                                </tr>
+                                <tr class="alt">
+                                <td>border-image-slice</td>
+                                <td>Chỉ định cụ thể như thế nào để cắt ảnh viền</td>
+                                <td>3</td>
+                                </tr>
+                                <tr>
+                                <td>border-image-source</td>
+                                <td>Chỉ định đường dẫn tới hình ảnh để sử dụng như đường viền</td>
+                                <td>3</td>
+                                </tr>
+                                <tr class="alt">
+                                <td>border-image-width</td>
+                                <td>Chỉ định độ rộng của ảnh-viền</td>
+                                <td>3</td>
+                                </tr>
+                                <tr>
+                                <td>border-left</td>
+                                <td>Thiết lập tất cả thuộc tính đường viền trái trong lời khai báo</td>
+                                <td>1</td>
+                                </tr>
+                                <tr class="alt">
+                                <td>border-left-color</td>
+                                <td>Thiết lập màu sắc của đường viền trái</td>
+                                <td>1</td>
+                                </tr>
+                                <tr>
+                                <td>border-left-style</td>
+                                <td>Thiết lập kiểu ( style) của đường viền trái</td>
+                                <td>1</td>
+                                </tr>
+                                <tr class="alt">
+                                <td>border-left-width</td>
+                                <td>Thiết lập độ rộng của đường viền trái</td>
+                                <td>1</td>
+                                </tr>
+                                <tr>
+                                <td>border-radius</td>
+                                <td>Thuộc tính viết tắt để thiết lập tất cả bốn đường viền-*-thuộc tính radius(bán kính)</td>
+                                <td>3</td>
+                                </tr>
+                                <tr class="alt">
+                                <td>border-right</td>
+                                <td>Thiết lập thuộc tính đường viền phải trong lời khai báo</td>
+                                <td>1</td>
+                                </tr>
+                                <tr>
+                                <td>border-right-color</td>
+                                <td>Thiết lập màu sắc cho đường viền phải</td>
+                                <td>1</td>
+                                </tr>
+                                <tr class="alt">
+                                <td>border-right-style</td>
+                                <td>Thiết lập kiểu&nbsp;(style) cho đường viền phải</td>
+                                <td>1</td>
+                                </tr>
+                                <tr>
+                                <td>border-right-width</td>
+                                <td>Thiết lập độ rộng cho đường viền phải</td>
+                                <td>1</td>
+                                </tr>
+                                <tr class="alt">
+                                <td>border-style</td>
+                                <td>Thiết lập kiểu&nbsp;(style) &nbsp;cho bốn đường viền</td>
+                                <td>1</td>
+                                </tr>
+                                <tr>
+                                <td>border-top</td>
+                                <td>Thiết lập thuộc tính đường viền trên trong lời khai báo</td>
+                                <td>1</td>
+                                </tr>
+                                <tr class="alt">
+                                <td>border-top-color</td>
+                                <td>Thiết lập màu sắc cho đường viền trên</td>
+                                <td>1</td>
+                                </tr>
+                                <tr>
+                                <td>border-top-left-radius</td>
+                                <td>Xác định hình dạng của đường viền góc trên bên&nbsp;trái</td>
+                                <td>3</td>
+                                </tr>
+                                <tr class="alt">
+                                <td>border-top-right-radius</td>
+                                <td>Xác định hình dạng của đường viền góc trên bên phải</td>
+                                <td>3</td>
+                                </tr>
+                                <tr>
+                                <td>border-top-style</td>
+                                <td>Thiết lập kiểu&nbsp;(style) cho đường viền trên</td>
+                                <td>1</td>
+                                </tr>
+                                <tr class="alt">
+                                <td>border-top-width</td>
+                                <td>Thiết lập độ rộng của đường viền trên</td>
+                                <td>1</td>
+                                </tr>
+                                <tr>
+                                <td>border-width</td>
+                                <td>Thiết lập độ rộng của bốn đường viền</td>
+                                <td>1</td>
+                                </tr>
+                                <tr class="alt">
+                                <td>box-decoration-break</td>
+                                <td>Thiết lập dáng vẻ của hình nền và đường viền của một phần tử &nbsp;tại trang ngắt, hoặc đối với phần tử in-line , tại&nbsp;&nbsp;dòng ngắt.</td>
+                                <td>3</td>
+                                </tr>
+                                <tr>
+                                <td>box-shadow</td>
+                                <td>Gắn một hoặc nhiều đổ bóng (drop-shadows) vào hộp</td>
+                                <td>3</td>
+                                </tr>
+                                </tbody>
+                                </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- LIÊN HỆ -->
+            <section class="section-padding section-bg">
+                <div class="container">
+                    <div class="row justify-content-center">
+
+                        <div class="col-lg-5 col-12">
+                            <img src="static/images/rear-view-young-college-student.jpg" class="newsletter-image img-fluid" alt="">
+                        </div>
+
+                        <div class="col-lg-5 col-12 subscribe-form-wrap d-flex justify-content-center align-items-center">
+                            <form class="custom-form subscribe-form" action="#" method="post" role="form">
+                                <h4 class="mb-4 pb-2">Nhận thông báo từ chúng tôi</h4>
+
+                                <input type="email" name="subscribe-email" id="subscribe-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Địa chỉ Email của bạn" required="">
+
+                                <div class="col-lg-12 col-12">
+                                    <button type="submit" class="form-control" onclick="window.location.href='/home'">Xác nhận</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+		
+        <footer class="site-footer section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-12 mb-4 pb-2">
+                        <a class="navbar-brand mb-2" href="index.html">
+                            <i class="bi-back"></i>
+                            <span>Topic</span>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <h6 class="site-footer-title mb-3">Resources</h6>
+
+                        <ul class="site-footer-links">
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Home</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">How it works</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">FAQs</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-0">
+                        <h6 class="site-footer-title mb-3">Information</h6>
+
+                        <p class="text-white d-flex mb-1">
+                            <a href="tel: 305-240-9671" class="site-footer-link">
+                                305-240-9671
+                            </a>
+                        </p>
+
+                        <p class="text-white d-flex">
+                            <a href="mailto:info@company.com" class="site-footer-link">
+                                info@company.com
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-lg-0 ms-auto">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            English</button>
+
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Thai</button></li>
+
+                                <li><button class="dropdown-item" type="button">Myanmar</button></li>
+
+                                <li><button class="dropdown-item" type="button">Arabic</button></li>
+                            </ul>
+                        </div>
+
+                        <p class="copyright-text mt-lg-5 mt-4">Copyright © 2048 Topic Listing Center. All rights reserved.
+                        <br><br>Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="static/js/jquery.min.js"></script>
+        <script src="static/js/bootstrap.bundle.min.js"></script>
+        <script src="static/js/jquery.sticky.js"></script>
+        <script src="static/js/custom.js"></script>
+
+    </body>
+</html>

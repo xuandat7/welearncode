@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Email</title>
+    <link rel="stylesheet"  href="{{ url_for('static', filename='css/quenmatkhau2.css') }}">
+</head>
+<body>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for m in messages %}
+        <div class="fade-out success-message">
+            <P>{{m}}</P>
+        </div>   
+    {% endfor %} 
+  {% endif %} 
+  {% endwith %}  
+    <div class="login-container"> 
+        <p>Mã xác nhân đã được gửi đến {{ session['email'] }}</p>
+        <form action="" method="POST">
+            <div class="input-group">
+                <label for="code">Nhập mã xác nhận của bạn:</label>
+                <input type="text" id="code" name="code" required>
+            </div>
+            <div class="dk1">
+                <button type="submit">Xác nhận</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

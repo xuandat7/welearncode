@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Questions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/themmon.css') }}">
+     
+</head>
+<body>
+    
+    <div class="container">
+        <h1>THÊM CÂU HỎI</h1>
+        <form id="question-form">
+            <label for="subject">Môn học:</label>
+            <input type="text" id="subject" name="subject" required>
+            <label for="code">Mã môn học:</label>
+            <input type="text" id="code" name="code" required>
+            <label for="quantity">Số lượng câu hỏi:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+            <button type="submit">Bắt đầu thêm câu hỏi</button>
+        </form>
+        <form id="question-container" style="display: none;">
+            
+            <h3>Thêm câu hỏi</h3>
+            <div id="add-question-form">
+                <!-- Question Inputs will be dynamically added here -->
+            </div>
+            <button id='submitbutton' type="submit">Hoàn tất</button>
+            <button id="back-button" type="button" style="display: none;">Quay lại</button> <!-- Thêm nút "Quay lại trang chủ" -->
+        </form>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/themmon.js') }}"></script>
+</body>
+</html>

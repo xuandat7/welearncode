@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Các câu lệnh cơ bản trong Javascript
+        </title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+                        
+        <link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="static/css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="static/css/main.css" rel="stylesheet">
+
+    </head>
+    
+    <body id="top">
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="/home">
+                        <!--i class="bi-back"></!--i-->
+                        <span style="color:white;">WeLearnCode</span>
+                    </a>
+
+                    <div class="d-lg-none ms-auto me-4">
+                        <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
+                        <a href="/logout" class="smoothscroll" style="padding-left: 10px; font-weight: bolder">Đăng xuất</a>
+                    </div>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <!-- <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-5 me-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_1">Khoá học</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_2">Luyện tập</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_3">Về chúng tôi</a>
+                            </li>
+
+                            
+                            
+                        </ul> -->
+
+                        
+                        <div class="d-none d-lg-block">
+                            <a class="navbar-icon bi-person smoothscroll" style="cursor: auto"></a>
+                            <a href="/logout" class="smoothscroll" style="padding-left: 10px; font-weight: bolder">Đăng xuất</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            
+            <!-- ĐẦU -->
+            <header class="site-header d-flex flex-column justify-content-center align-items-center">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+
+                        <div class="col-lg-5 col-12 mb-5">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/home">Trang chủ</a></li>
+
+                                    <li class="breadcrumb-item active" aria-current="page">Giới thiệu về Javascript</li>
+                                </ol>
+                            </nav>
+
+                            <h2 class="text-white">Các câu lệnh cơ bản trong Javascript</h2>
+
+                            <div class="d-flex align-items-center mt-5">
+                                <a href="#topics-detail" class="btn custom-btn custom-border-btn smoothscroll me-4">Đọc ngay</a>
+
+                                <a href="#top" class="custom-icon bi-bookmark smoothscroll"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 col-12">
+                            <div class="topics-detail-block bg-white shadow-lg">
+                                <img src="static/images/HTML5.jpg" class="topics-detail-block-image img-fluid">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+            <!-- NỘI DUNG -->
+            <section class="topics-detail-section section-padding" id="topics-detail">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-8 col-12 m-auto">
+                            <h3 class="mb-4">Các lệnh cơ bản trong Javascript</h3>
+                            <div class="row my-4">
+                                <div class="col-lg-99 col-13">
+                                    <img src="static/images/HTML5.jpg" class="newsletter-image img-fluid">
+                                </div>
+                            </div>
+                            <d>Các câu lệnh trong Javascript bao gồm<d>
+                            <ul>
+                            <li>Values</li>
+                            <li>Operators</li>
+                            <li>Expresssions</li>
+                            <li>Keywords</li>
+                            <li>Comment</li>
+                            </ul>
+
+                            <h3 class="mb-4">Semicolons(dấu chấm phẩy) trong Javascipt</h3>
+                            <d>Các câu lệnh trong Javascipt được phân cách nhau bằng dấu chấm phẩy.<d>
+                            <d>Dấu chấm phẩy đánh giấu kết thúc các câu lệnh trong Javascript<d>
+                            <p><strong>Ví dụ</strong></p>
+                            <pre class="language-js" data-filename=""><code class="language-js"><span class="token keyword">let</span> x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z<span class="token punctuation">;</span>
+                            x <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+                            y <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+                            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                            </code></pre>
+
+                            <d>Chúng ta có thể viết nhiều câu lệnh trên cùng một dòng nếu chúng đước phân cách bởi dấu chấm phẩy.<d>
+
+                            <h3 class="mb-4">Khoảng trắng trong Javascript</h3>
+                            <d>Javascrip không quan tâm đến những khoảng trắng trong code nên chúng ta có thể thêm các khoảng trắng để code dễ đọc hơn.<d>
+                            <p><strong>Ví dụ</strong></p>
+                            <pre class="language-js" data-filename=""><code class="language-js"><span class="token keyword">let</span> personName <span class="token operator">=</span> <span class="token string">"Nguyen CHi Hao"</span><span class="token punctuation">;</span>
+                            <span class="token keyword">let</span> age <span class="token operator">=</span> <span class="token number">22</span><span class="token punctuation">;</span>
+                            </code></pre>
+
+                            <h3 class="mb-4">Khối lệnh trong Javascript</h3>
+                            <d>Các câu lệnh Javascript có thể được nhóm lại với nhau thành các khối mã bên trong {}.<d>
+                            <d>Mục đích của các khối mã này là để xác định các câu lệnh sẽ được thực thi cùng nhau.<d>
+                            <d>Chúng ta có thể dê dàng thấy được các khối lệnh ở mọi nơi trong đoạn mã Javascript.<d>
+                            <p><strong>Ví dụ</strong></p>
+                            <pre class="language-js" data-filename=""><code class="language-js"><span class="token keyword">function</span> <span class="token function">printPersonInfo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Tên:"</span><span class="token punctuation">,</span> <span class="token string">"Nguyen Chi Hao"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Tuoi:"</span><span class="token punctuation">,</span> <span class="token number">22</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                            <span class="token punctuation">}</span>
+                            </code></pre>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- LIÊN HỆ -->
+            <section class="section-padding section-bg">
+                <div class="container">
+                    <div class="row justify-content-center">
+
+                        <div class="col-lg-5 col-12">
+                            <img src="static/images/rear-view-young-college-student.jpg" class="newsletter-image img-fluid" alt="">
+                        </div>
+
+                        <div class="col-lg-5 col-12 subscribe-form-wrap d-flex justify-content-center align-items-center">
+                            <form class="custom-form subscribe-form" action="#" method="post" role="form">
+                                <h4 class="mb-4 pb-2">Nhận thông báo từ chúng tôi</h4>
+
+                                <input type="email" name="subscribe-email" id="subscribe-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Địa chỉ Email của bạn" required="">
+
+                                <div class="col-lg-12 col-12">
+                                    <button type="submit" class="form-control" onclick="window.location.href='/home'">Xác nhận</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+		
+        <footer class="site-footer section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-12 mb-4 pb-2">
+                        <a class="navbar-brand mb-2" href="index.html">
+                            <i class="bi-back"></i>
+                            <span>Topic</span>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <h6 class="site-footer-title mb-3">Resources</h6>
+
+                        <ul class="site-footer-links">
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Home</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">How it works</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">FAQs</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-0">
+                        <h6 class="site-footer-title mb-3">Information</h6>
+
+                        <p class="text-white d-flex mb-1">
+                            <a href="tel: 305-240-9671" class="site-footer-link">
+                                305-240-9671
+                            </a>
+                        </p>
+
+                        <p class="text-white d-flex">
+                            <a href="mailto:info@company.com" class="site-footer-link">
+                                info@company.com
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-lg-0 ms-auto">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            English</button>
+
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Thai</button></li>
+
+                                <li><button class="dropdown-item" type="button">Myanmar</button></li>
+
+                                <li><button class="dropdown-item" type="button">Arabic</button></li>
+                            </ul>
+                        </div>
+
+                        <p class="copyright-text mt-lg-5 mt-4">Copyright © 2048 Topic Listing Center. All rights reserved.
+                        <br><br>Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="static/js/jquery.min.js"></script>
+        <script src="static/js/bootstrap.bundle.min.js"></script>
+        <script src="static/js/jquery.sticky.js"></script>
+        <script src="static/js/custom.js"></script>
+
+    </body>
+</html>

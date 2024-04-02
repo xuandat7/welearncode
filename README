@@ -1,0 +1,9 @@
+# Đầu tiên bạn hãy cài hai thư viện flask và pyodbc về nha
+# sau đó import file database.dacpac vào SQL SERVER của bn
+# vào phần app.py sửa:
+    #server = 'LAPTOP-FF387IJ3\HOANGQUAN'
+    #database = 'Account' /ten database sử dụng để làm việc
+    #username = 'quan' tài khoản khi vào database
+    #password = '123456'
+# theo máy tính của bạn
+# xong chạy app.py nó sẽ hiện ra đường link trong terminal để bạn chạy web

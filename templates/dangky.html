@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng ký</title>
+ <link rel="stylesheet"  href="{{ url_for('static', filename='css/dangky.css') }}">
+    
+</head>
+<body>
+  {% with messages = get_flashed_messages() %}
+  {% if messages %}
+      {% for m in messages %}
+      <div class="fade-out success-message">
+          <P>{{m}}</P>
+      </div>   
+  {% endfor %} 
+{% endif %} 
+{% endwith %}
+  <div class="login-container">
+    <h2>ĐĂNG KÝ</h2>
+    <form action="" method="POST">
+      <div class="input-group">
+        <label for="username">Email:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Mật khẩu:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      
+      <div class="dk1">
+        <div class="dangky1">
+            <a class="phan1" href="/login">Đăng nhập ngay</a>
+        </div>
+        <button  type="submit">Đăng ký</button>
+    </div>
+    </form>
+  </div>
+</body>
+</html>

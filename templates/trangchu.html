@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/trangchu.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="left">
+            <div class="group-name">Tên nhóm</div>
+        </div>
+        <div class="right">
+            <a href="/logout"   id="logout-btn">Đăng xuất</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <form action="" method="POST">
+                <input type="text" id="course-code" placeholder="Nhập mã môn học" name="mamonhoc">
+                <button type="submit" >XÁC NHẬN</button>
+            </form>
+                
+                
+            
+            <a  href="/themmon"   id="add-course-btn">Thêm môn học</a>
+            <!-- Các phần khác của trang -->
+        </div>
+    </main>
+    <a href="" class="navbar-icon bi-person smoothscroll"></a>
+    <a href="/logout" class="smoothscroll" style="padding-left: 10px; font-weight: bolder">Đăng xuất</a>
+   
+</body>
+</html>

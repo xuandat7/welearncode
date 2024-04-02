@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Giới thiệu về Cấu trúc dữ liệu và giải thuật</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+                        
+        <link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="static/css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="static/css/main.css" rel="stylesheet">
+
+    </head>
+    
+    <body id="top">
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="/home">
+                        <!--i class="bi-back"></!--i-->
+                        <span style="color:white;">WeLearnCode</span>
+                    </a>
+
+                    <div class="d-lg-none ms-auto me-4">
+                        <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
+                        <a href="/logout" class="smoothscroll" style="padding-left: 10px; font-weight: bolder">Đăng xuất</a>
+                    </div>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <!-- <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-5 me-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_1">Khoá học</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_2">Luyện tập</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_3">Về chúng tôi</a>
+                            </li>
+
+                            
+                            
+                        </ul> -->
+
+                        
+                        <div class="d-none d-lg-block">
+                            <a class="navbar-icon bi-person smoothscroll" style="cursor: auto"></a>
+                            <a href="/logout" class="smoothscroll" style="padding-left: 10px; font-weight: bolder">Đăng xuất</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            
+            <!-- ĐẦU -->
+            <header class="site-header d-flex flex-column justify-content-center align-items-center">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+
+                        <div class="col-lg-5 col-12 mb-5">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/home">Trang chủ</a></li>
+
+                                    <li class="breadcrumb-item active" aria-current="page">Giới thiệu về Cấu trúc dữ liệu giải thuật</li>
+                                </ol>
+                            </nav>
+
+                            <h2 class="text-white">Cây nhị phân tìm kiếm</h2>
+
+                            <div class="d-flex align-items-center mt-5">
+                                <a href="#topics-detail" class="btn custom-btn custom-border-btn smoothscroll me-4">Đọc ngay</a>
+
+                                <a href="#top" class="custom-icon bi-bookmark smoothscroll"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 col-12">
+                            <div class="topics-detail-block bg-white shadow-lg">
+                                <img src="static/images/DSA2.png" class="topics-detail-block-image img-fluid">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+            <!-- NỘI DUNG -->
+            <section class="topics-detail-section section-padding" id="topics-detail">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-8 col-12 m-auto">
+                            <h3 class="mb-4">Lý thuyết về cây nhị phân</h3>
+                            
+                            <d>Cây nhị phân là một cấu trúc bao gồm các Node, trong đó mỗi Node bao gồm 3 thành phần sau:</d>
+                            <li>1. Data element: Lưu giữ giá trị 1 phần tử với kiểu dữ liệu bất kỳ</li>
+                            <li>2. Left pointer: Con trỏ trỏ tới cây nhị phân bên trái của Node</li>
+                            <li>3. Right pointer: Con trỏ trỏ tới cây nhị phân bên phải của Node</li>
+                            <d>Nếu một cây nhị phân trống, nó sẽ được biểu diễn thành con trỏ NULL. Hình ảnh dưới đây sẽ cho bạn cái nhìn tổng quát về cây nhị phân:</d>
+                            <div class="row my-4">
+                                <div class="col-lg-999 col-13">
+                                    <img src="static/images/DSA2.png" class="newsletter-image img-fluid">
+                                </div>
+                            </div>
+                            <d><strong>Các thuật ngữ sử dụng trong cấu trúc Cây</strong></d>
+                            <ul>
+                            <li><strong>Root</strong>: Node tổ tiên của cây. Là Node mà không có cha</li>
+                            <li><strong>Child</strong>: Là Node con của một Node cụ thể nào đó</li>
+                            <li><strong>Parent</strong>: Ngược lại của Child</li>
+                            <li><strong>Siblings</strong>: Các Node có cùng một cha</li>
+                            <li><strong>Descendant</strong>: Node có thể truy cập bằng cách duyệt từ cha tới con</li>
+                            <li><strong>Ancestor</strong>: Node có thể truy cập bằng cách duyệt từ con đến cha</li>
+                            <li><strong>Leaf</strong>: Node không có Child</li>
+                            <li><strong>Internal node</strong>: Node có ít nhất 1 Child</li>
+                            <li><strong>External node</strong>: Node không có Child</li>
+                            </ul>
+
+                            <h3 class="mb-4">Cài đặt cây nhị phân</h3>
+                            <d>Chúng ta cần định nghĩa kiểu dữ liệu Node cho cây nhị phân. Như đã trình bày, mỗi Node của cây nhị phân sẽ như sau:<d>
+
+                            <pre class="lang:default decode:true">struct node{int data;                 //Data elementstruct node * left;          //Pointer to left nodestruct node * right;         //Pointer to right node
+                            };</pre>
+                            
+                            <d>Khởi tạo Node gốc, không sử dụng con trỏ.<d>
+                            <pre class="lang:default decode:true">struct node root;</pre>
+                            <d>Khởi tạo con trỏ Node:<d>
+                            <pre class="lang:default decode:true">struct node * MakeNode(int value){ struct node * temp=(node * )malloc(sizeof(node));
+                                temp-&gt;data = value;
+                                temp-&gt;left = temp-&gt;right=NULL;
+                                return temp;
+                            }</pre>
+                            <d>Ứng dụng phương pháp này trong việc tính tổng kích thước của thư mục. Ứng dụng tính toán giá trị của biểu thức.<d>
+                                <div class="row my-4">
+                                    <div class="col-lg-99 col-13">
+                                        <img src="static/images/DSA3.png" class="newsletter-image img-fluid">
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- LIÊN HỆ -->
+            <section class="section-padding section-bg">
+                <div class="container">
+                    <div class="row justify-content-center">
+
+                        <div class="col-lg-5 col-12">
+                            <img src="static/images/rear-view-young-college-student.jpg" class="newsletter-image img-fluid" alt="">
+                        </div>
+
+                        <div class="col-lg-5 col-12 subscribe-form-wrap d-flex justify-content-center align-items-center">
+                            <form class="custom-form subscribe-form" action="#" method="post" role="form">
+                                <h4 class="mb-4 pb-2">Nhận thông báo từ chúng tôi</h4>
+
+                                <input type="email" name="subscribe-email" id="subscribe-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Địa chỉ Email của bạn" required="">
+
+                                <div class="col-lg-12 col-12">
+                                    <button type="submit" class="form-control" onclick="window.location.href='/home'">Xác nhận</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+		
+        <footer class="site-footer section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-12 mb-4 pb-2">
+                        <a class="navbar-brand mb-2" href="index.html">
+                            <i class="bi-back"></i>
+                            <span>Topic</span>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <h6 class="site-footer-title mb-3">Resources</h6>
+
+                        <ul class="site-footer-links">
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Home</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">How it works</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">FAQs</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-0">
+                        <h6 class="site-footer-title mb-3">Information</h6>
+
+                        <p class="text-white d-flex mb-1">
+                            <a href="tel: 305-240-9671" class="site-footer-link">
+                                305-240-9671
+                            </a>
+                        </p>
+
+                        <p class="text-white d-flex">
+                            <a href="mailto:info@company.com" class="site-footer-link">
+                                info@company.com
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-lg-0 ms-auto">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            English</button>
+
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Thai</button></li>
+
+                                <li><button class="dropdown-item" type="button">Myanmar</button></li>
+
+                                <li><button class="dropdown-item" type="button">Arabic</button></li>
+                            </ul>
+                        </div>
+
+                        <p class="copyright-text mt-lg-5 mt-4">Copyright © 2048 Topic Listing Center. All rights reserved.
+                        <br><br>Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="static/js/jquery.min.js"></script>
+        <script src="static/js/bootstrap.bundle.min.js"></script>
+        <script src="static/js/jquery.sticky.js"></script>
+        <script src="static/js/custom.js"></script>
+
+    </body>
+</html>

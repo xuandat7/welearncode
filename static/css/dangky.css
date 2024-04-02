@@ -1,0 +1,117 @@
+
+  
+  /*form dang nhap*/
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  
+   
+  
+  /*form dang nhap*/
+ 
+  
+.login-container {
+  height: 350px;
+  width: 600px;
+  background-color:#fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+}
+
+
+h2 {
+  text-align: center;
+  color: #333;
+ 
+}
+
+.input-group {
+  margin-bottom: 20px;
+  margin:0px 30px 20px 30px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color:#c8dae2;
+  
+}
+
+.dk1{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 0px 32px;
+  margin-top: 50px;
+
+}
+.dangky1 {
+  
+  text-align: left;
+  margin-bottom: 12px;
+}
+.phan1 {
+  text-decoration: none;
+  font-size: 20px;
+  color: #6dea75;
+ 
+}
+
+button {
+  width: 30%;
+  height: 15%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.success-message {
+  position: fixed;
+  top: 50px;
+  right: 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 9999;
+}
+.fade-out {
+  opacity: 0.8;
+  transition: opacity 3s;
+}
+
+.fade-out.hidden {
+  opacity: 0;
+}
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.fade-out {
+  animation: fadeOut 3s forwards;
+}
