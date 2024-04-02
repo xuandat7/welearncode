@@ -1,4 +1,5 @@
 Flask
 Gunicorn
 pyodbc
-sqlserver
+python-dotenv
+flask-smorest
