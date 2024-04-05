@@ -3,3 +3,4 @@ Gunicorn
 pyodbc
 python-dotenv
 flask-smorest
+mssql
