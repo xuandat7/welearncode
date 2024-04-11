@@ -3,7 +3,7 @@ Gunicorn
 pyodbc
 python-dotenv
 flask-smorest
-mysql
+mysql-connector-python-rf
 pandas
 fuzzywuzzy
 pyvi
