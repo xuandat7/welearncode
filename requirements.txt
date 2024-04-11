@@ -6,3 +6,6 @@ flask-smorest
 mssql
 pandas
 fuzzywuzzy
+pyvi
+sklearn.feature_extraction.text
+
