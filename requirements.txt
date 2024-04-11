@@ -7,5 +7,6 @@ mysql-connector-python-rf
 pandas
 fuzzywuzzy
 pyvi
+openpyxl
 # sklearn.feature_extraction.text
 
