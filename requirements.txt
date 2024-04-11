@@ -7,5 +7,5 @@ mssql
 pandas
 fuzzywuzzy
 pyvi
-sklearn.feature_extraction.text
+# sklearn.feature_extraction.text
 
